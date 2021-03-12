@@ -12,6 +12,7 @@ class Anagram
     same_letters = []
     match_cases.collect do |word|
       if word.length == @match.length && word.split("") == @match.split("")
+        puts word
         same_letters << word
       end
     end
