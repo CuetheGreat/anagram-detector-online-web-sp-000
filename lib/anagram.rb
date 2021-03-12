@@ -9,9 +9,7 @@ class Anagram
   
   def match(match_cases)
      matches =  match_cases.collect do |word|
-        if word.length == @match.length
-          word
-        end
+         if word.length == @match.length
     end
     
     puts matches
