@@ -13,6 +13,7 @@ class Anagram
     match_cases.collect do |word|
       if word.length == @match.length && word.split("") == @match.split("")
         same_letters << word
+      end
     end
     
     same_letters
