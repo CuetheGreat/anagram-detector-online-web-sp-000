@@ -8,11 +8,19 @@ class Anagram
   end
   
   def match(match_cases)
+    letters = []
     same_length =  match_cases.collect do |word|
         word if word.length == @match.length
     end
     
+    @match.each do |letter|
+      letters << same_length.include?(letter)
+      if letters.length == @match.length
+        letters.all?
+    end
     
+    
+      
     
   end
 end    
