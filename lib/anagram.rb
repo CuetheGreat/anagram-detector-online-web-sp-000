@@ -16,7 +16,7 @@ class Anagram
     @match.each do |letter|
       letters << same_length.include?(letter)
       if letters.length == @match.length
-        letters.all?
+          letters.all?(:true)
     end
     
     
