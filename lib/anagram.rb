@@ -13,9 +13,6 @@ class Anagram
         if word.length == @match.length
          word if word.split("") == @match.split("")
     end
-      
-
-
     
-  end
+    same_length_words
 end    
