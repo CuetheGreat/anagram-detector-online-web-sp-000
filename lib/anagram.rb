@@ -10,8 +10,8 @@ class Anagram
   def match(match_cases)
     
     same_length_words =  match_cases.collect do |word|
-      if word.length == @match.length
-         word if word.split("") == @match.split("")
+      if word.length == @match.length 
+         
       end
     end
     
